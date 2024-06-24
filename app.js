@@ -81,9 +81,3 @@ function isEmpty() {
     createToast(type, icon, title, text);
   }
 }
-
-
-function siema() {
-  type = "success"; icon = "fa-regular fa-circle-check"; title = "Sukces!"; text = "Wiadomość pomyślnie wysłana.";
-  createToast(type, icon, title, text);
-}
