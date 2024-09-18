@@ -45,10 +45,32 @@
     </header>
 
     <div class="notifications">
-        
+
     </div>
 
     <main>
+        <!-- <div class="gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="gradients-container">
+              <div class="g1"></div>
+              <div class="g2"></div>
+              <div class="g3"></div>
+              <div class="g4"></div>
+              <div class="g5"></div>
+              <div class="interactive"></div>
+            </div>
+          </div> -->
+
+
+
         <div id="head">
             <!-- <div class="langs">
                 <a href="#" language="polish">PL</a>
@@ -152,9 +174,6 @@
                         <a href="#" class="btn btn3">Zobacz projekt</a>
                     </div>
                 </div>
-
-
-                <div style="clear: both;"></div>
             </div>
         </section>
     </main>
@@ -164,9 +183,10 @@
             <div id="leftpanel">
                 <h1>Znajdź mnie!</h1>
                 <a href="mailto:mpielka80@gmail.com"><i class="fa-regular fa-envelope"></i> mpielka80@gmail.com</a>
+                <span>Lub wypełnij formularz <i class="fa-solid fa-arrow-right"></i></span>
 
                 <div id="social-icons">
-                    <a href="https://www.facebook.com" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/RayskiDev" title="GitHub"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.youtube.com/@RayskiSwiat" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
                     <a href="https://www.instagram.com/serniczek1552/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
@@ -178,8 +198,10 @@
             <div id="rightpanel">
                 <form id="contactForm">
                     <input type="email" id="email" name="email" placeholder="Your e-mail" autocomplete="email" required>
+                    <label class="formLabel">E-mail na który dostaniesz odpowiedź</label>
 
                     <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <label class="formLabel">Temat najlepiej opisujący wiadomość</label>
 
                     <textarea id="message" name="message" rows="6" placeholder="Message"  required></textarea>
 

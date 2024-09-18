@@ -29,6 +29,37 @@ function createToast(type, icon, title, text) {
 }
 
 
+// import 'style.css';
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const interBubble = document.querySelector(".interactive");
+//     let curX = 0;
+//     let curY = 0;
+//     let tgX = 0;
+//     let tgY = 0;
+
+//     function move() {
+//         curX += (tgX - curX) / 20;
+//         curY += (tgY - curY) / 20;
+//         interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
+//         requestAnimationFrame(() => {
+//             move();
+//         });
+//     }
+
+//     window.addEventListener('mousemove', (event) => {
+//         tgX = event.clientX;
+//         tgY = event.clientY;
+//     });
+
+//     move();
+// });
+
+
+
+
+
+
 
 const tabs = document.querySelectorAll('.tab-links');
 const about_content = document.querySelectorAll('.content');
@@ -75,6 +106,9 @@ function isEmpty() {
     type = "fail"; icon = "fa-solid fa-circle-exclamation"; title = "Błąd!"; text = "Proszę wypełnić wszystkie pola.";
     createToast(type, icon, title, text);
     return false;
+  } else if (email!=="*@*") {
+    type = "fail"; icon = "fa-solid fa-circle-exclamation"; title = "Błąd!"; text = "Proszę wpisać prawdziwy e-mail.";
+    createToast(type, icon, title, text);
   } else {
     sendMail();
     type = "success"; icon = "fa-solid fa-circle-check"; title = "Sukces!"; text = "Wiadomość pomyślnie wysłana.";
