@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dd27f562fc.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -49,7 +50,7 @@
     </div>
 
     <main>
-        <!-- <div class="gradient-bg">
+        <div class="gradient-bg">
             <svg xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <filter id="goo">
@@ -67,7 +68,7 @@
               <div class="g5"></div>
               <div class="interactive"></div>
             </div>
-          </div> -->
+        </div>
 
 
 
@@ -200,7 +201,7 @@
                     <input type="email" id="email" name="email" placeholder="Your e-mail" autocomplete="email" required>
                     <label class="formLabel">E-mail na który dostaniesz odpowiedź</label>
 
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="none" required>
                     <label class="formLabel">Temat najlepiej opisujący wiadomość</label>
 
                     <textarea id="message" name="message" rows="6" placeholder="Message"  required></textarea>
