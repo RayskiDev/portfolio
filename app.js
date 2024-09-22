@@ -48,6 +48,25 @@ tabs.forEach((tab, index) => {
 
 
 
+document.addEventListener("DOMContentLoaded", function(event) {
+  let circle = document.querySelectorAll('.circle');
+  circle.forEach(function(progress){
+    let degree = 0;
+    var targetDegree = parseInt(progress.getAttribute('data-degree'));
+    let number = progress.querySelector('.number');
+
+    var interval = setInterval(function(){
+      degree+=1;
+      if (degree>targetDegree) {
+        clearInterval(interval)
+        return;
+      }
+      progress.style.background = `conic-gradient(#f0f ${degree}%, #222 0%)`;
+      number.innerHTML = degree + `<span style="font-size: 18px;">%</span>`;
+    },50)
+  })
+})
+
 
 
 
