@@ -50,8 +50,7 @@ tabs.forEach((tab, index) => {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-document.addEventListener('DOMContentLoaded', () => {
-  const activeTab = document.querySelector('.tab-links.active');
+const activeTab = document.querySelector('.tab-links.active');
   if (activeTab) {
     const line = document.querySelector('.line');
     line.style.width = activeTab.offsetWidth + "px";
