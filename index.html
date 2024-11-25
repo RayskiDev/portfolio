@@ -1,218 +1,361 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marek Pielka | Portfolio</title>
-    <meta name="description" content="Jestem programistą od 2 lat, pracuję nad grą komputerową ale w wolnych chwilach mogę porobić strony internetowe na zamówienie.">
+    <meta
+      name="description"
+      content="Tworzenie stron internetowych na zlecenie."
+    />
+    <meta name="keywords" content="website, programista, blender, grafika3D" />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin>
-    <script src="https://kit.fontawesome.com/dd27f562fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://ka-f.fontawesome.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/dd27f562fc.js"
+      crossorigin="anonymous"
+    ></script>
 
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "Bu7JldaEu09rrZLhe",
-            });
-        })();
+      (function () {
+        emailjs.init({
+          publicKey: "Bu7JldaEu09rrZLhe",
+        });
+      })();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div id="logo">
-                <h2>Marek</h2>
-            </div>
+      <nav>
+        <div id="logo">
+          <h2>Marek</h2>
+        </div>
 
-            <ul>
-                <li><a href="#head">Strona główna</a></li>
-                <li>
-                    <a href="#web-list">Moje prace</a>
-                    <ul>
-                        <li><a href="#web-list">Web development</a></li>
-                        <li><a href="#">3D modeling</a></li>
-                    </ul>
-                </li>
-                <li><a href="#know-me">O mnie</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
+        <ul>
+          <li><a href="#head">Strona główna</a></li>
+          <li><a href="#about">O mnie</a></li>
+          <li><a href="#web-list">Moje prace</a></li>
+          <li><a href="#faq">Kontakt</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <div class="notifications">
-
-    </div>
+    <div class="notifications"></div>
 
     <main>
-        <div class="gradient-bg">
-            <svg xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <filter id="goo">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-                  <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-              </defs>
-            </svg>
-            <div class="gradients-container">
-              <div class="g1"></div>
-              <div class="g2"></div>
-              <div class="g3"></div>
-              <div class="g4"></div>
-              <div class="g5"></div>
-            </div>
+      <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                in="SourceGraphic"
+                stdDeviation="10"
+                result="blur"
+              />
+              <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                result="goo"
+              />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+        </div>
+      </div>
+
+      <div id="head">
+        <div class="wrapper">
+          <div class="words">
+            <span>UI|UX Designer</span>
+            <span>Web Developer</span>
+            <span>3D Designer</span>
+            <span>Game Developer</span>
+            <span>UI|UX Designer</span>
+          </div>
+          <h1>Marek Pielka</h1>
+          <br />
+        </div>
+        <!-- <a href="#know-me" id="down-arrow"><i class="fa-solid fa-chevron-down" title="Przejdź dalej"></i></a> -->
+      </div>
+
+      <section id="about">
+        <div class="tab-titles">
+          <p class="tab-links active">O mnie</p>
+          <p class="tab-links">Umiejętności</p>
+          <p class="tab-links">Doświadczenie</p>
+          <div class="line"></div>
         </div>
 
-
-
-        <div id="head">
-            <!-- <div class="langs">
-                <a href="#" language="polish">PL</a>
-                <a href="#" language="english">EN</a>
-            </div> -->
-            <div class="wrapper">
-                <div class="words">
-                    <span>UI|UX Designer</span>
-                    <span>Web Developer</span>
-                    <span>3D Designer</span>
-                    <span>Game Developer</span>
-                    <span>UI|UX Designer</span>
-                </div>
-                <h1>Marek Pielka</h1>
-                <br>
-            </div>
-            <!-- <a href="#know-me" id="down-arrow"><i class="fa-solid fa-chevron-down" title="Przejdź dalej"></i></a> -->
+        <div class="content active">
+          <h2 class="sub-title">O mnie</h2>
+          <p>
+            Jestem programistą "po godzinach", gdyż moją główną pasją jest
+            muzyka, ale od zawsze lubiłem zdobywać nowe doświadczenie w
+            kolejnych dziedzinach, a że interesowały mnie także tematy
+            informatyczne, to programowanie również nie jest mi obce. Uczęszczam
+            do technikum na profil informatyczny, gdzie uczę się o działaniu
+            systemów "od środka". Jak wspomniałem wyżej, uwielbiam uczyć się
+            nowych rzeczy, a przyswajanie wiedzy przychodzi mi z dużą łatwością.
+            Potrafię wykonać projekty w dziedzinie tworzenia stron
+            internetowych, montażu filmów wideo, obróbka zdjęć, grafika 3D w
+            programie blender oraz tworzenie podkładów muzycznych czy też
+            realizacja pełnego utworu. Do tej pory zrealizowałem już kilka
+            projektów stron internetowych, a ta, na której Państwo teraz się
+            znajdują, jest częścią mojego portfolio i stanowi przykład moich
+            umiejętności, podobnie jak inne projekty, które można tu zobaczyć. W
+            wolnym czasie pracuję także nad grą komputerową w gatunku horror,
+            tworząc do niej scenariusz, modele, tekstury oraz całą mechanikę i
+            przebieg opowiadanej historii.
+          </p>
         </div>
 
-        <section id="know-me">
-            <div class="tab-titles">
-                <p class="tab-links active">O mnie</p>
-                <p class="tab-links">Umiejętności</p>
-                <p class="tab-links">Blender 3D</p>
-                <div class="line"></div>
+        <div class="content">
+          <h2 class="sub-title">Umiejętności</h2>
+
+          <div class="skills">
+            <div class="circle" data-degree="80">
+              <h2 class="number"></h2>
+              <h4>HTML</h4>
             </div>
-
-            <div class="content active">
-                <h2 class="sub-title">O mnie</h2>
-                <p>Jestem programistą "po godzinach", gdyż moją główną pasją jest muzyka, ale od zawsze lubiłem zdobywać nowe doświadczenie w kolejnych dziedzinach, a że interesowały mnie także tematy informatyczne, to programowanie również nie jest mi obce. Uczęszczam do technikum na profil informatyczny, gdzie uczę się o działaniu systemów "od środka". Jak wspomniałem wyżej, uwielbiam uczyć się nowych rzeczy, a przyswajanie wiedzy przychodzi mi z dużą łatwością. Potrafię wykonać projekty w dziedzinie tworzenia stron internetowych, montażu filmów wideo, obróbka zdjęć, grafika 3D w programie blender oraz tworzenie podkładów muzycznych czy też realizacja pełnego utworu. Do tej pory zrealizowałem już kilka projektów stron internetowych, a ta, na której Państwo teraz się znajdują, jest częścią mojego portfolio i stanowi przykład moich umiejętności, podobnie jak inne projekty, które można tu zobaczyć. W wolnym czasie pracuję także nad grą komputerową w gatunku horror, tworząc do niej scenariusz, modele, tekstury oraz całą mechanikę i przebieg opowiadanej historii.</p>
+            <div class="circle" data-degree="65">
+              <h2 class="number"></h2>
+              <h4>CSS</h4>
             </div>
-
-            <div class="content">
-                <h2 class="sub-title">Umiejętności</h2>
-
-                <div class="skills">
-                    <div class="circle" data-degree="80">
-                        <h2 class="number"></h2>
-                        <h4>HTML</h4>
-                    </div>
-                    <div class="circle" data-degree="65">
-                        <h2 class="number"></h2>
-                        <h4>CSS</h4>
-                    </div>
-                    <div class="circle" data-degree="55">
-                        <h2 class="number"></h2>
-                        <h4>javascript</h4>
-                    </div>
-                </div>
+            <div class="circle" data-degree="55">
+              <h2 class="number"></h2>
+              <h4>javascript</h4>
             </div>
+          </div>
+        </div>
 
-            <div class="content">
-                <h2 class="sub-title">Blender 3D</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus sem felis, sed gravida dui
-                    molestie ut. Proin finibus, ligula ut aliquet sagittis, eros orci viverra dui, vitae suscipit justo
-                    tellus id lacus. Pellentesque aliquam, tellus in finibus rhoncus, nunc purus bibendum massa, in
-                    porttitor velit nisl nec urna. Vestibulum luctus enim eget congue lacinia. Curabitur lacinia eros
-                    nunc, eget pretium velit rutrum ut. Nunc eu pulvinar risus, a faucibus ligula. Suspendisse a lacus a
-                    leo efficitur sagittis. Ut at vehicula risus, a ultrices lectus. Aenean arcu dolor, ullamcorper nec
-                    ornare at, bibendum quis est. Proin at semper libero. Aenean finibus purus eros, id volutpat diam
-                    fermentum non. Vivamus suscipit dolor erat, non posuere nisl ullamcorper eu. Sed nec facilisis
-                    ligula. Ut congue eros sed ullamcorper placerat. Proin accumsan odio nec purus auctor, eu vestibulum
-                    neque aliquet. Nulla pellentesque quam non auctor ultrices.</p>
-            </div>
-        </section>
+        <div class="content">
+          <h2 class="sub-title">Blender 3D</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus
+            sem felis, sed gravida dui molestie ut. Proin finibus, ligula ut
+            aliquet sagittis, eros orci viverra dui, vitae suscipit justo tellus
+            id lacus. Pellentesque aliquam, tellus in finibus rhoncus, nunc
+            purus bibendum massa, in porttitor velit nisl nec urna. Vestibulum
+            luctus enim eget congue lacinia. Curabitur lacinia eros nunc, eget
+            pretium velit rutrum ut. Nunc eu pulvinar risus, a faucibus ligula.
+            Suspendisse a lacus a leo efficitur sagittis. Ut at vehicula risus,
+            a ultrices lectus. Aenean arcu dolor, ullamcorper nec ornare at,
+            bibendum quis est. Proin at semper libero. Aenean finibus purus
+            eros, id volutpat diam fermentum non. Vivamus suscipit dolor erat,
+            non posuere nisl ullamcorper eu. Sed nec facilisis ligula. Ut congue
+            eros sed ullamcorper placerat. Proin accumsan odio nec purus auctor,
+            eu vestibulum neque aliquet. Nulla pellentesque quam non auctor
+            ultrices.
+          </p>
+        </div>
+      </section>
 
-        <section class="web-example clearfix">
-            <h2 class="sub-title">Realizacje stron internetowych:</h2>
+      <section class="web-example clearfix">
+        <h2 class="sub-title">Moje projekty:</h2>
+        <div class="project-buttons">
+          <div class="tabs">
+            <input type="radio" id="radio-1" name="tabs" value="web" checked />
+            <label class="tab" for="radio-1">Strony internetowe</label>
 
+            <input type="radio" id="radio-2" name="tabs" value="blender" />
+            <label class="tab" for="radio-2">Blender 3D</label>
+
+            <span class="glider"></span>
+          </div>
+        </div>
+
+        <div class="project-container">
+          <div class="project-content web-content active">
             <div id="web-list">
-                <div class="web-tile">
-                    <img src="assets/web1.jpg" alt="strona 1">
-                    <div class="layer">
-                        <h3>Website 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie tellus eu nisi
-                            pulvinar, et aliquet eros suscipit. Lorem ipsum.</p>
-                        <a href="#" class="btn btn3">Zobacz projekt</a>
-                    </div>
+              <div class="web-tile">
+                <img src="assets/web1.jpg" alt="strona 1" />
+                <div class="layer">
+                  <h3>Website 1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    molestie tellus eu nisi pulvinar, et aliquet eros suscipit.
+                    Lorem ipsum.
+                  </p>
+                  <a href="#" class="btn btn3">Zobacz projekt</a>
                 </div>
+              </div>
 
-                <div class="web-tile">
-                    <img src="assets/web1.jpg" alt="strona 2">
-                    <div class="layer">
-                        <h3>Website 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie tellus eu nisi
-                            pulvinar, et aliquet eros suscipit. Lorem ipsum.</p>
-                        <a href="#" class="btn btn3">Zobacz projekt</a>
-                    </div>
+              <div class="web-tile">
+                <img src="assets/web1.jpg" alt="strona 2" />
+                <div class="layer">
+                  <h3>Website 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    molestie tellus eu nisi pulvinar, et aliquet eros suscipit.
+                    Lorem ipsum.
+                  </p>
+                  <a href="#" class="btn btn3">Zobacz projekt</a>
                 </div>
+              </div>
 
-                <div class="web-tile">
-                    <img src="assets/web1.jpg" alt="strona 3">
-                    <div class="layer">
-                        <h3>Website 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie tellus eu nisi
-                            pulvinar, et aliquet eros suscipit. Lorem ipsum.</p>
-                        <a href="#" class="btn btn3">Zobacz projekt</a>
-                    </div>
+              <div class="web-tile">
+                <img src="assets/web1.jpg" alt="strona 3" />
+                <div class="layer">
+                  <h3>Website 3</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    molestie tellus eu nisi pulvinar, et aliquet eros suscipit.
+                    Lorem ipsum.
+                  </p>
+                  <a href="#" class="btn btn3">Zobacz projekt</a>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <div class="project-content blender-content">
+            <p>Modele 3D z Blender tutaj.</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div id="contact">
-            <div id="leftpanel">
-                <h1>Znajdź mnie!</h1>
-                <a href="mailto:mpielka80@gmail.com"><i class="fa-regular fa-envelope"></i> mpielka80@gmail.com</a>
-                <span>Lub wypełnij formularz <i class="fa-solid fa-arrow-right"></i></span>
-
-                <div id="social-icons">
-                    <a href="https://github.com/RayskiDev" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.youtube.com/@RayskiSwiat" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/serniczek1552/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <a href="https://fixly.pl/profil/n5ulj1ic" target="_blank"> <img alt="Polecają mnie na Fixly"
-                        width="178" src="https://fixly.pl/profil/n5ulj1ic/widget-a01-2x.png" style="border: 0 none;">
-                </a>
+      <section id="faq">
+        <h2>FAQ</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Jakie technologie używasz w swoich projektach?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Używam m.in. HTML, CSS, JavaScript, Blender 3D oraz Unreal
+                Engine 5.
+              </p>
             </div>
-
-            <div id="rightpanel">
-                <form id="contactForm">
-                    <input type="email" id="email" name="email" placeholder="Your e-mail" autocomplete="email" required>
-                    <label class="formLabel">E-mail na który dostaniesz odpowiedź</label>
-
-                    <input type="text" id="subject" name="subject" placeholder="Subject" autocomplete="none" required>
-                    <label class="formLabel">Temat najlepiej opisujący wiadomość</label>
-
-                    <textarea id="message" name="message" rows="6" placeholder="Message"  required></textarea>
-
-                    <button type="submit" class="btn btn2" onclick="isEmpty()">Send</button>
-
-                </form>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Czy mogę skontaktować się z Tobą w sprawie współpracy?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Oczywiście! Wystarczy wypełnić formularz kontaktowy na dole
+                strony.
+              </p>
             </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Jakie projekty można znaleźć na tej stronie?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Na stronie znajdziesz modele 3D stworzone w Blenderze oraz
+                strony internetowe hostowane na GitHub.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Czy mogę używać Twoich projektów w swoich celach?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Wszystkie projekty są objęte prawami autorskimi. Skontaktuj się
+                ze mną, jeśli chcesz ich użyć.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="contact">
+        <div id="leftpanel">
+          <h1>Znajdź mnie!</h1>
+          <a href="mailto:mpielka80@gmail.com"
+            ><i class="fa-regular fa-envelope"></i> mpielka80@gmail.com</a
+          >
+          <span
+            >Lub wypełnij formularz <i class="fa-solid fa-arrow-right"></i
+          ></span>
+
+          <div id="social-icons">
+            <a href="https://github.com/RayskiDev" title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.youtube.com/@RayskiSwiat" title="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/serniczek1552/" title="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <a href="https://fixly.pl/profil/n5ulj1ic" target="_blank">
+            <img
+              alt="Polecają mnie na Fixly"
+              width="178"
+              src="https://fixly.pl/profil/n5ulj1ic/widget-a01-2x.png"
+              style="border: 0 none"
+            />
+          </a>
         </div>
 
-        <div id="copy">
-            <p>&copy;2024 Marek Pielka</p>
+        <div id="rightpanel">
+          <form id="contactForm" onsubmit="return false">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your e-mail"
+              autocomplete="email"
+              required
+            />
+            <label class="formLabel"
+              >E-mail na który dostaniesz odpowiedź</label
+            >
+
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              autocomplete="none"
+              required
+            />
+            <label class="formLabel">Temat najlepiej opisujący wiadomość</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn btn2" id="formSubbmit">
+              Send
+            </button>
+          </form>
         </div>
+      </div>
+
+      <div id="copy">
+        <hr />
+        <p>&copy;2024 Marek Pielka</p>
+      </div>
     </footer>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
